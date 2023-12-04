@@ -1,0 +1,68 @@
+{
+    "file digits": 3,
+    "delimiter": "    ",
+    "shared lines filename": ".//data//shared_lines_0710.inp",
+
+    "header": "I/O FILES",
+    "io files needed": [
+        "plot3d_grid.xyz",
+        "plot3d_sol.bin",
+        "cfl3d.out",
+        "resid.out",
+        "cfl3d.turres",
+        "cfl3d.blomax",
+        "cfl3d.2out",
+        "cfl3d.prt",
+        "cfl3d.press",
+        "ovrlp.bin",
+        "patch.bin",
+        "cfl3d.restart"
+    ],
+
+    "cltarg lines": {
+        "line before": "> ",
+        "line": "cltarg ",
+        "line after": "< "
+    },
+
+    "NASA Reference": "https://nasa.github.io/CFL3D/Cfl3dv6/nasatm-2006-214301bartels.pdf",
+
+    "setup comment": "CFL3D V6 INPUT FILE GENERATED WITH GRIDGEN",
+
+    "condition data": {
+        "title line": "     XMACH     ALPHA      BETA  REUE,MIL   TINF,DR     IALPH    IHSTRY",
+        "default values": {
+            "XMACH": 0.72,
+            "ALPHA": 1.0,
+            "BETA": 0.0,
+            "REUE,MIL": 1e7,
+            "TINF,DR": 460.0,
+            "IALPH": 1,
+            "IHSTRY": 0
+        }
+    },
+
+    "reference data": {
+        "title line": "      SREF      CREF      BREF       XMC       YMC       ZMC",
+        "default values": {
+            "SREF": 1.0,
+            "CREF": 1.0,
+            "BREF": 1.0,
+            "XMC": 0.25,
+            "YMC": 0.0,
+            "ZMC": 0.0
+        }
+    },
+
+    "cycling data": {
+        "title line": "        DT     IREST   IFLAGTS      FMAX     IUNST    CFLTAU",
+        "default values": {
+            "DT": -0.1,
+            "IREST": 0,
+            "IFLAGTS": 5000,
+            "FMAX": 5.0,
+            "IUNST": 0,
+            "CFLTAU": 7.5
+        }
+    }
+}

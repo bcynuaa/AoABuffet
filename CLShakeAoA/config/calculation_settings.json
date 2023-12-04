@@ -1,0 +1,32 @@
+{
+    "calculation data path": "C://Project//Data",
+    "folder digits": 3,
+    "connection character": "_",
+    "Minf folder hint": "M",
+    "AoA folder hint": "A",
+
+    "dataframe config": {
+        "columns": [
+            "mesh filename",
+            "Minf",
+            "AoA",
+            "dt",
+            "CL cruise",
+            "converge",
+            "CL",
+            "CD",
+            "Cm",
+            "CDp",
+            "CDf",
+            "AoA output",
+            "dudy min",
+            "CL err",
+            "CD err",
+            "Cm err",
+            "CDp err",
+            "CDf err",
+            "AoA output err",
+            "task folder"
+        ]
+    }
+}

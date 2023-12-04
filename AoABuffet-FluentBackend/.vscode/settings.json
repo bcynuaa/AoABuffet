@@ -1,0 +1,22 @@
+{
+    "autoHeader": {
+        "format": {
+            "startWith": "'''",
+            "middleWith": "*",
+            "endWith": "'''",
+            "headerPrefix": "-",
+        },
+        "header": {
+            "project": "AoABuffet-FluentBackend",
+            "language": "Python",
+            "license": "MIT",
+            "encoding": "UTF-8",
+            "author": "Hongqiang Lv | Chenyu Bao | Jian Lin",
+            "date": {
+                "type": "createTime",
+                "format": "YYYY-MM-DD HH:mm:ss",
+            },
+            "description": "",
+        }
+    }
+}

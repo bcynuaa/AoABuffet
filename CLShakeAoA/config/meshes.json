@@ -1,0 +1,10 @@
+{
+    "mesh files path": "C://Project//Mesh",
+    "mesh file format": ".x",
+
+    "airfoil geometry and grid": {
+        "nn": 1001,
+        "j0": 61,
+        "j1": 261
+    }
+}

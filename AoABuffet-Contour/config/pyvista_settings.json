@@ -1,0 +1,27 @@
+{
+    "plot theme": "document",
+    "plotter": {
+        "window size": [1440, 1024],
+        "off screen": true,
+        "show edges": false,
+        "show scalar bar": false,
+        "cmap": "jet",
+        "n colors": 1000,
+        "camera position": "xy",
+        "camera zoom": 30
+    },
+    "scalar name list": [
+        "PRESSURE",
+        "X_VELOCITY",
+        "Y_VELOCITY",
+        "DENSITY"
+    ],
+    "screen shot filename list": [
+        "pressure.png",
+        "x_velocity.png",
+        "y_velocity.png",
+        "density.png"
+    ],
+    "delta x": 0.0,
+    "delta y": -0.1
+}

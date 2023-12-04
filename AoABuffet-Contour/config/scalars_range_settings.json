@@ -1,0 +1,16 @@
+{
+    "buffet aoa csv filename": "C://Users//bcynuaa//Desktop//LocalProject//Help//BuffetPressure//Data//BuffetAoAData//BuffetAoA.csv",
+    "csv filename addition": "_output",
+    "min max csv filename addition": "_min_max",
+
+    "mesh file name": "mesh file",
+    "mach name": "mach",
+    "attack angle name": "AoA buffet",
+    "drag coeff name": "CD",
+    "lift coeff name": "CL",
+    "working directory name": "working directory",
+    "flow field file name": "flow field file",
+
+    "scalar min addition": "_min",
+    "scalar max addition": "_max"
+}

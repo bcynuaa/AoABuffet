@@ -1,0 +1,54 @@
+{
+    "fluent exe": "C://SoftWare//Ansys//ANSYS Inc//v222//fluent//ntbin//win64//fluent.exe",
+    "dim": 2,
+    "thread number": 10,
+    "tui commands template": [
+        "/file/read-case %s",
+        "/mesh/check",
+        "/define/models/solver/density-based-implicit y",
+        "/define/models/energy? y no no no y",
+        "/define/models/viscous/kw-sst? y",
+        "define/materials/change-creat/air air y ideal-gas no no y constant 1.831e-05 no no no",
+        "define/boundary-conditions/pressure-far-field far no 101325 no %.10f no 298 no %.10f no %.10f n n y 1 1",
+        "/define/operating-conditions/operating-pressure 0",
+        "/report/reference-values/ compute pressure-far-field far q zone unspecified",
+        "solve/initialize/initialize-flow",
+        "/solve/initialize/compute-defaults pressure-far-field far q initialize-flow ok q",
+        "solve/iterate %d",
+        "/file/write-case-data %s ok",
+        "/report/forces/wall-forces y %.10f %.10f y %s",
+        "/report/forces/wall-forces y %.10f %.10f y %s",
+        "exit"
+    ],
+    "tui commands custom": {
+        "read case": {
+            "line number": 1,
+            "default filename": "input.cas",
+            "comment": "specify: input case file"
+        },
+        "working condition": {
+            "line number": 7,
+            "comment": "specify: mach, cos(a), sin(a)"
+        },
+        "iterations": {
+            "line number": 12,
+            "comment": "specify: iterations"
+        },
+        "write case": {
+            "line number": 13,
+            "default filename": "output.cas",
+            "comment": "specify: output case file"
+        },
+        "cd report": {
+            "line number": 14,
+            "default filename": "cd_report.dat",
+            "comment": "specify: cos(a), sin(a), cd report file"
+        },
+        "cl report": {
+            "line number": 15,
+            "default filename": "cl_report.dat",
+            "comment": "specify: -sin(a), cos(a), cl report file"
+        }
+    },
+    "tui commands filename": "start.jou"
+}

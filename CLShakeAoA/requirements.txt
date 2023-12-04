@@ -1,0 +1,5 @@
+numpy
+cfdpost
+pandas
+fsspec
+scipy

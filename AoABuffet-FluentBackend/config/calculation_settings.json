@@ -1,0 +1,25 @@
+{
+    "calculation data path": "C://AoABuffet-FluentBackend//Data",
+    "folder digits": 3,
+    "connection character": "_",
+    "mach folder hint": "mach",
+    "AoA folder hint": "AoA",
+
+    "dataframe config": {
+        "columns": [
+            "mach",
+            "AoA",
+            "CL",
+            "CD",
+            "iterations",
+            "cmd",
+            "task folder",
+            "read case filename",
+            "write case filename",
+            "cd report filename",
+            "cl report filename",
+            "tui commands filename",
+            "return code"
+        ]
+    }
+}

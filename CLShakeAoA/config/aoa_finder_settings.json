@@ -1,0 +1,60 @@
+{
+    "AoA begin": 0.5,
+    
+    "converge AoA": {
+        "AoA begin": {
+            "value": 1.5,
+            "comment": "it's better toensure this AoA makes calculation converge for most cases"
+        },
+        "AoA end": {
+            "value": 4.0,
+            "comment": "it's better to ensure this AoA makes calculation diverge for most cases"
+        },
+        "tolerance": 0.02,
+        "devide": 2,
+        "extend percentage": {
+            "value": 0.1,
+            "comment 1": "while AoA end may be too small to make calculation diverge, extend AoA range to find the converge AoA",
+            "comment 2": "the value 0.1 means extend 10% of the AoA range from AoA end",
+            "comment 3": "although usually AoA begin is converge, but diverge may occur",
+            "comment 4": "thus extend AoA range from AoA begin check is also necessary"
+        },
+        "min AoA span": {
+            "value": 0.4,
+            "comment": "this value means the minimum AoA span should at least be 0.4"
+        }
+    },
+
+    "linear part": {
+        "sample number": 5,
+        "AoA span percentage": 0.6
+    },
+
+    "fluctuate part": {
+        "sample number": 6,
+        "AoA span percentage": 0.3
+    },
+
+    "diverge part": {
+        "sample number": 6,
+        "AoA span percentage": 0.1
+    },
+
+    "CLalpha 0": {
+        "sample number": 4,
+        "first AoA index": 0,
+        "comment": "the sample number should be lager than that in linear part"
+    },
+
+    "interpolation": {
+        "sample number": 101
+    },
+
+    "AoA buffet": {
+        "CLalpha shift": 0.1,
+        "AoA span percentage": {
+            "value": 0.2,
+            "comment": "the value 0.2 means AoA buffet locates at the back 20% of the AoA range"
+        }
+    }
+}
