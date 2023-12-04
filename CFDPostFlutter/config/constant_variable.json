@@ -1,0 +1,5 @@
+{
+    "small amount": 1e-6,
+    "default interpolation type": "linear",
+    "preferred interpolation type": "cubic"
+}

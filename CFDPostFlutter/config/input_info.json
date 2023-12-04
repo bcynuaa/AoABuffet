@@ -1,0 +1,70 @@
+{
+    "cfl3d directory": {
+        "value": "..//TestDir//",
+        "comment": "this is the working directory where lies the 'cfl3d_Sep.exe' and 'cfl3d.inp' files",
+        "exe filename": "cfl3d_Seq.exe",
+        "inp filename": "cfl3d.inp",
+        "x filename": "cfl3d.x"
+    },
+
+    "working directory": {
+        "value": "..//TestDir//Data//",
+        "comment": "where the result should be saved",
+        "folder digits": 3,
+        "folder name": "AOA_"
+    },
+
+    "working condition": {
+        "CL_cruise": 0.7,
+    
+        "AoA_min": 0.5,
+        "AoA_max": 4.0,
+        "dAoA": [0.5, 0.1, 0.01, 0.002],
+
+        "Minf": 0.72,
+        "Re": 1e7,
+
+        "t_max": 0.1,
+        "tail": 0.0
+    },
+
+    "airfoil geometry and grid": {
+        "nn": 1001,
+        "n_cst": 10,
+        
+        "j0": 61,
+        "j1": 381,
+        "G_Tail": 9
+    },
+
+    "cfl3d inp file config": {
+        "file digits": 3,
+        "inp header": "I/O FILES\n",
+        "io files needed": [
+            "cfl3d.x",
+            "plot3d_grid.xyz",
+            "plot3d_sol.bin",
+            "cfl3d.out",
+            "resid.out",
+            "cfl3d.turres",
+            "cfl3d.blomax",
+            "cfl3d.2out",
+            "cfl3d.prt",
+            "cfl3d.press",
+            "ovrlp.bin",
+            "patch.bin",
+            "cfl3d.restart"
+        ],
+        "before cltarg": "> \n",
+        "cltarg": "cltarg ",
+        "after cltarg": "< \n",
+        "inp file comment": "CFL3D V6 INPUT FILE GENERATED WITH GRIDGEN \n",
+        "inp config vars header": "     XMACH     ALPHA      BETA  REUE,MIL   TINF,DR     IALPH    IHSTRY             \n",
+        "shared things in inp file from this line number": 21,
+        "BETA": 0.0,
+        "TINF,DR": 460.0,
+        "IALPH": 1,
+        "IHSTRY": 0,
+        "delim": "  "
+    }
+}

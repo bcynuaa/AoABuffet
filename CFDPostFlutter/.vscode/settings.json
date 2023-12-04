@@ -1,0 +1,18 @@
+{
+    "autoHeader": {
+        "format": {
+            "startWith": "'''",
+            "middleWith": "#",
+            "endWith": "'''",
+            "headerPrefix": "",
+        },
+        "header": {
+            "Author": "bcynuaa",
+            "Create Time": {
+                "type": "createTime",
+                "format": "YYYY-MM-DD HH:mm:ss",
+            },
+            "Description": "",
+        }
+    }
+}
